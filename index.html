@@ -72,18 +72,18 @@
 </style>
 </head>
 	
-<body>
+<body itemscope itemtype="http://schema.org/Person">
 <div class="main" id="home">
 <!-- banner -->
 	<div class="banner">
 			<!--Slider-->
-			<img src="images/pic2.jpg" alt="Photo of Ramjivan Jangid" class="img-responsive">
-					<h2>I'M Ramjivan Jangid</h2>
-					<span>PROGRAMMER / BCA Student</span>
+			<img src="images/pic2.jpg" itemprop="image" alt="Photo of Ramjivan Jangid" class="img-responsive">
+					<h2>I'M <span itemprop="name">Ramjivan Jangid</span></h2>
+					<span>PROGRAMMER / BCA <span itemprop="jobTitle">Student</span></span>
 				<div class="callbacks_container">
 					<ul class="rslides" id="slider3">
 						<li>
-						
+		
 							<div class="slider-info">
 								  <p>Best time to start something in Now, So let's Start. </p>
 							</div>
@@ -162,7 +162,7 @@
 				<div class="col-md-7 w3ls-agile-left">
 					<div class="w3ls-agile-left-info">
 						<h4>Current Status</h4>
-						<p>Student at <a href="http://www.lachoomemorial.org/">Lachoo Memorial Collage</a></p>
+						<p>Student at <a href="http://www.lachoomemorial.org/" itemprop="affiliation">Lachoo Memorial Collage</a></p>
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Name</h4>
@@ -170,7 +170,7 @@
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Sex</h4>
-						<p>Male</p>
+						<p itemprop="gender">Male</p>
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Address</h4>
@@ -178,8 +178,14 @@
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Email Address</h4>
-						<p><a href="mailto:ramjeewanj@gmail.com">ramjeewanj@gmail.com</a></p>
+						<p><a itemprop="email" href="mailto:ramjeewanj@gmail.com">ramjeewanj@gmail.com</a></p>
 					</div>
+					<div class="w3ls-agile-left-info">
+						<!-- Place this tag where you want the button to render. -->
+						<a class="github-button" href="https://github.com/Ramjivan" data-style="mega" data-count-href="/Ramjivan/followers" data-count-api="/users/Ramjivan#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @Ramjivan on GitHub">Follow @Ramjivan</a>
+					</div>
+
+
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -451,6 +457,7 @@
 	</div>
 </div>
 <!--counter-->
+
 <!-- mail -->
 	<div class="mail" id="mail">
 		<div class="container">
@@ -510,15 +517,18 @@
 		<div class="container">
 			
 			<div class="w3ls_footer_grids">
-				
-				<div class="w3ls_footer_grid">
+				<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="w3ls_footer_grid">
 					<div class="col-md-4 w3ls_footer_grid_left">
 						<div class="w3ls_footer_grid_leftl">
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 						</div>
 						<div class="w3ls_footer_grid_leftr">
 							<h4>Location</h4>
-							<p>Soorsagar Jodhpur, RJ, India</p>
+							<p>
+								<span itemprop="addressLocality">Jodhpur</span>,
+								<span itemprop="addressRegion">RJ</span>,
+								<span itemprop="nationality">India</span>
+							</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -528,7 +538,7 @@
 						</div>
 						<div class="w3ls_footer_grid_leftr">
 							<h4>Email</h4>
-							<a href="mailto:ramjeewanj@gmail.com">ramjeewanj@gmail.com</a>
+							<a href="mailto:ramjeewanj@gmail.com" itemprop="email" >ramjeewanj@gmail.com</a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -539,7 +549,7 @@
 						<div class="w3ls_footer_grid_leftr">
 							<a href="tel:+918003209036">
 								<h4>Call Me</h4>
-								<p>(+918) 003 209 036</p>
+								<p itemprop="telephone">(+918) 003 209 036</p>
 							</a>
 						</div>
 						<div class="clearfix"> </div>
@@ -549,7 +559,7 @@
 			</div>
 		</div>
 		<div class="w3l_footer_pos">
-			<p>© 2017 Ramjivan Jangid. All Rights Reserved </p>
+			<p>© 2017 <a href="https://www.linkedin.com/in/ramjivan-jangid" itemprop="url">Ramjivan Jangid</a>. All Rights Reserved </p>
 		</div>
 	</div>
 <!-- //footer -->
@@ -667,5 +677,7 @@
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+<!-- git -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
