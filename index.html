@@ -27,6 +27,29 @@
 <link href="//fonts.googleapis.com/css?family=Gidugu" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
+<style>
+.chat_with_btns{
+	font-size:32px;
+	 background-color: white;
+	margin: 20px;
+	padding: 3px;
+	border-radius: 1em; 
+}
+.chat_with_btns:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	font-family: cursive;  
+}
+@media screen and (min-width: 600px) {
+ .chat_with_btns {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+</style>
 </head>
 	
 <body>
@@ -52,25 +75,21 @@
 						    </div>
 						</li>
 						<li>
-							
 							<div class="slider-info">
 							<p>You Don't need to be good at Maths if u r a Programmer. </p>
-							
 							</div>
 						</li>
-
-
 					</ul>
 					
 			<div class="clearfix"></div>
 		</div>
 		<!--//Slider-->
-					<ul class="top-links">
-									<li><a target="_blank" href="https://www.facebook.com/ramjeewan.jangid"><i class="fa fa-facebook"></i></a></li>
-									<li><a target="_blank" href="https://twitter.com/ramjeewanj"><i class="fa fa-twitter"></i></a></li>
-									<li><a target="_blank" href="https://www.linkedin.com/in/ramjivan-jangid-b1b4a653/"><i class="fa fa-linkedin"></i></a></li>
-									<li><a target="_blank" href="https://plus.google.com/+RamjivanJangid"><i class="fa fa-google-plus"></i></a></li>
-								</ul>
+		<ul class="top-links">
+			<li><a target="_blank" href="https://www.facebook.com/ramjeewan.jangid"><i class="fa fa-facebook"></i></a></li>
+			<li><a target="_blank" href="https://twitter.com/ramjeewanj"><i class="fa fa-twitter"></i></a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/ramjivan-jangid-b1b4a653/"><i class="fa fa-linkedin"></i></a></li>
+			<li><a target="_blank" href="https://plus.google.com/+RamjivanJangid"><i class="fa fa-google-plus"></i></a></li>
+		</ul>
 	</div>
 <!-- //banner -->
 	</div>
@@ -411,9 +430,7 @@
 				
 				<h5>LINES OF CODE</h5>
 				
-					<p class="counter">3008</p> 
-				
-				
+					<p class="counter">3008</p> 		
 				
 			</div>
 			<div class="clearfix"> </div>
@@ -427,7 +444,7 @@
 			<h3 class="w3l_head w3l_head1">Contact Me</h3>
 			<p class="w3ls_head_para w3ls_head_para1">send Me a message</p>
 			<div class="w3_mail_grids">
-				<form action="#" method="post">
+				<form action="http://shribadaramdwara.org/contact_us_form_processor.php" method="post">
 					<div class="col-md-6 w3_agile_mail_grid">
 						<span class="input input--ichiro">
 							<input class="input__field input__field--ichiro" type="text" id="input-25" placeholder=" " required="">
@@ -447,7 +464,7 @@
 								<span class="input__label-content input__label-content--ichiro">Your Phone Number</span>
 							</label>
 						</span>
-						
+					
 					</div>
 					<div class="col-md-6 w3_agile_mail_grid">
 						<textarea name="Message" placeholder="Your Message" required=""></textarea>
@@ -456,17 +473,17 @@
 					<div class="clearfix"> </div>
 				</form>
 				
-				<button onclick="window.location.href='intent://send/+918003209036#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end'" style="background-color: white;font-size:32px; margin: 20px;padding: 3px; border: 3px solid #34af23; border-radius: 1em; color:#34af23;">
+				<!--Chat with Whats app Btn-->
+				<button class="chat_with_btns" onclick="window.location.href='whatsapp://send?text=Hey there!&phone=+918003209036'" style=" border: 3px solid #34af23; color:#34af23; padding-right:15px; ">
 					Chat On 
 					<i class="fa fa-whatsapp"></i>
 				</button>
-				
-				<button onclick="window.location.href='https://m.me/100003472848000'" style="font-size:32px; background-color: white; margin: 20px;padding: 3px; border: 3px solid  #0084ff; border-radius: 1em; color: #0084ff;">
+				<!--Chat with Messanger app Btn-->
+				<button class="chat_with_btns" onclick="window.location.href='https://m.me/100003472848000'" style=" border: 3px solid  #0084ff; color: #0084ff;">
 					Chat On <img style="width: 35px; height: 35px;" src="images/messanger.png">
 					<i class="fa fa-messanger"></i>
 				</button>
-				
-				
+			
 			</div>
 		</div>
 	</div>
