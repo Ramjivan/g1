@@ -177,7 +177,7 @@
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Name</h4>
-						<p>Ramjivan Jangid</p>
+						<p itemprop="name">Ramjivan Jangid</p>
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Sex</h4>
@@ -185,7 +185,11 @@
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Address</h4>
-						<p> Soorsagar, Jodhpur</p>
+						<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<span itemprop="addressLocality">Jodhpur</span>,
+								<span itemprop="addressRegion">RJ</span>,
+								<span itemprop="nationality">India</span>
+						</p>
 					</div>
 					<div class="w3ls-agile-left-info">
 						<h4>Email Address</h4>
@@ -530,14 +534,14 @@
 		<div class="container">
 			
 			<div class="w3ls_footer_grids">
-				<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="w3ls_footer_grid">
+				<div class="w3ls_footer_grid">
 					<div class="col-md-4 w3ls_footer_grid_left">
 						<div class="w3ls_footer_grid_leftl">
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 						</div>
 						<div class="w3ls_footer_grid_leftr">
 							<h4>Location</h4>
-							<p>
+							<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 								<span itemprop="addressLocality">Jodhpur</span>,
 								<span itemprop="addressRegion">RJ</span>,
 								<span itemprop="nationality">India</span>
